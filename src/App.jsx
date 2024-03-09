@@ -54,6 +54,7 @@ function App() {
 function FlashCards() {
   const [selctedId, setSelectId] = useState(null);
 
+  // ? if the id contains null remove the current state and if the contains matched it will returns the id
   const toggleAnswer = id => {
     setSelectId(id !== selctedId ? id : null);
   };
