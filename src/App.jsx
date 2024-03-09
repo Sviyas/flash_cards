@@ -2,6 +2,9 @@
 import { useState } from 'react';
 import './App.css';
 
+/***
+ * @description Flash Card Feed Data
+ */
 const flashCardList = [
   {
     id: 1,
@@ -51,6 +54,10 @@ function App() {
   );
 }
 
+/**
+ *
+ * @returns Flash Card Components
+ */
 function FlashCards() {
   const [selctedId, setSelectId] = useState(null);
 
